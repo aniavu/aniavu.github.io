@@ -706,6 +706,16 @@ a.fn-item.active {
     border-radius: 25px;
 }
 
+.cc {
+    width: 80%;
+    height: auto;
+/*
+    border-radius: 25px;
+    position:absolute;
+    clip:rect(20px,850px,50px,50px);
+*/
+}
+
 .post-title {
     margin:0;
 }
