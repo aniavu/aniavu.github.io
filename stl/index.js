@@ -82,6 +82,12 @@ var $post = $('.post'),
 		}, 1000);
     }
     $(document).ready(function(){
+		    $('.home-template').fadeIn(2000);
+				//{duration: 1000, start: function() {
+				//	  $(this).css('display', 'table');
+				//  }
+			  //});
+
         $postholder.each(function (e) {
         	if(e % 2 != 0)
         		$(this).css({
