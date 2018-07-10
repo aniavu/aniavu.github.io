@@ -1,5 +1,11 @@
 /* ==========================================================================
    Table of Contents
+
+ https://www.colourlovers.com/color/F8F7F1/Beige
+
+ https://www.colourlovers.com/palette/3560764/Absent:_ContinuumXLS
+ https://www.colourlovers.com/palette/3682353/Home
+ https://www.colourlovers.com/palette/4119010/Snowstorm
    ========================================================================== */
 
 /*
@@ -89,8 +95,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    /*font-family: 'Droid Serif', serif;*/
-    font-family: 'Roboto Slab', serif;
+    font-family: 'EB Garamond', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
     color: #3A4145;
@@ -124,28 +129,31 @@ h4, h5, h6 {
     line-height: 1;
     margin-top: 0;
     margin-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
 }
 h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 120%;
     margin-top: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     margin-bottom: 0%;
 }
 
 h1 {
     font-size: 5rem;
     line-height: 1.2em;
+/*
     letter-spacing: -2px;
     text-indent: -3px;
+*/
 }
 
 h2 {
     font-size: 4rem;
     line-height: 1.2em;
+/*
     letter-spacing: -1px;
     text-indent: -2px;
+*/
 }
 
 h3 {
@@ -166,19 +174,21 @@ h6 {
 
 a {
     color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted;
     transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
 }
 
 a:hover {
-    color: #86c440;
+    color: #D13C32;
 }
 
 a.btn {
     
     text-decoration: none;
-    background-color: #9fd067;
+    background-color: #D13C32;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     color: white;
@@ -198,7 +208,7 @@ a.btn {
 }
 
 a.btn:hover {
-    background: #86c440;
+    background: #D13C32;
 }
 
 #header-arrow {
@@ -594,7 +604,7 @@ a.button:focus {
     margin-bottom: 0rem;
     text-align: center;
     color: #fff;
-    background: rgb(0, 153, 204) no-repeat center center;
+    background: #AFCDD3 no-repeat center center;
     background-size: cover;
 }
 
@@ -625,7 +635,9 @@ a.button:focus {
 .blog-title {
     margin: 10px 0 10px 0;
     font-size: 15rem;
+/*
     letter-spacing: -1px;
+*/
     text-align: left;
 }
 
@@ -634,7 +646,10 @@ a.button:focus {
     font-size: 4rem;
     line-height: 1.5em;
     font-weight: 300;
+/*
     font-family: 'Roboto Slab', serif;
+*/
+    font-family: 'EB Garamond', serif;
     letter-spacing: 0;
     text-align: left;
 }
@@ -642,7 +657,7 @@ a.button:focus {
 .post-holder {
     width:100%;
     height: 100%;
-    background: #f2efe8;
+    background: #F8F7F1;
     position: relative;
 }
 
@@ -670,25 +685,30 @@ a.button:focus {
     top: 40px;
     left: 2%;
     z-index: 99999;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'EB Garamond', serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     line-height: 130%;
     font-weight: bold;
 }
 a.fn-item {
+    text-decoration: none;
+    border-bottom: 0px dotted;
     display: block;
     cursor: pointer;
+    color: #AFCDD3;
     opacity: 0.7;
 }
 .white {
     color: white;
 }
 a.fn-item:hover {
-    color: #9fd067;
+/* WTF */
+    color: #D13C32;
 }
 a.fn-item.active {
-    color: #86c440;
+/* TODO: this can have different color */
+    color: #D13C32;
     opacity: 1;
 
 }
@@ -702,7 +722,7 @@ a.fn-item.active {
     height: 0; 
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 50px solid #f2efe8;
+    border-top: 50px solid #F8F7F1;
     border-radius: 25px;
 }
 
@@ -733,7 +753,7 @@ a.fn-item.active {
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
     color: #9EABB3;
 }
@@ -744,7 +764,8 @@ a.fn-item.active {
 }
 
 .post-meta a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
 .user-meta {
@@ -892,7 +913,7 @@ a.fn-item.active {
     width: 80%;
     max-width: 800px;
     margin: 4rem auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -941,7 +962,7 @@ a.fn-item.active {
     position: relative;
     margin: 0rem 0 0 0;
     padding: 1rem 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     line-height: 1.5em;
     color: #BBC7CC;
@@ -1062,7 +1083,7 @@ a.fn-item.active {
         top: 0px;
         left: 0px;
         z-index: 99999;
-        background: #f2efe8;
+        background: #F8F7F1;
         width: 100%;
         text-align: center;
         padding: 4px;

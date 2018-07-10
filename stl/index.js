@@ -56,8 +56,12 @@ function subscribe (email) {
 
 function addById (id, fu) {
   var e = document.getElementById(id);
+  if (!e) {
+    return;
+  }
   e.addEventListener('click', fu, false);   
 }
+
 /**
  * Main JS file for GhostScroll behaviours
  */
@@ -81,17 +85,19 @@ var $post = $('.post'),
         $postholder.each(function (e) {
         	if(e % 2 != 0)
         		$(this).css({
-                    'background': '#0099cc',
-                    'color'     : 'white',
+						// these are the darker posts
+                    'background': '#242E35',
+                    'color'     : '#F8F7F1',
                 })
         })
 
         $postafter.each(function (e) {
         	var bg = $(this).parent().css('background-color')
+					console.log(e, $(this).parent(), bg);
         	$(this).css('border-top-color', bg)
 
-        	if(e % 2 == 0)
-        		$(this).css('left', '6%')
+        	//if(e % 2 == 0)
+        	//	$(this).css('left', '6%')
 
         })
         
@@ -182,6 +188,15 @@ var $post = $('.post'),
         }
     })
     
+    //$('.image').fancybox({
+    //  helpers: {
+    //    overlay: {
+    //      locked: false
+    //    }
+    //  }
+    //});
+    
+    $.fancybox.defaults.hideScrollbar = false;
 
 }(jQuery));
 
