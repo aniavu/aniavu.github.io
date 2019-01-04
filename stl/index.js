@@ -82,6 +82,12 @@ var $post = $('.post'),
 		}, 1000);
     }
     $(document).ready(function(){
+		    $('.home-template').fadeIn(2000);
+				//{duration: 1000, start: function() {
+				//	  $(this).css('display', 'table');
+				//  }
+			  //});
+
         $postholder.each(function (e) {
         	if(e % 2 != 0)
         		$(this).css({
@@ -93,7 +99,7 @@ var $post = $('.post'),
 
         $postafter.each(function (e) {
         	var bg = $(this).parent().css('background-color')
-					console.log(e, $(this).parent(), bg);
+					//console.log(e, $(this).parent(), bg);
         	$(this).css('border-top-color', bg)
 
         	//if(e % 2 == 0)
@@ -110,6 +116,14 @@ var $post = $('.post'),
         })
         $('#header-arrow').click(function () {
             srcTo ($first)
+        })
+
+        $('.subwork').click(function () {
+				    let h = $(this).attr('srcTo');
+						// console.log(h);
+            let e = $(h);
+						// console.log(e);
+            srcTo(e);
         })
 
         $('.post-title').each(function () {

@@ -150,6 +150,7 @@ h1 {
 h2 {
     font-size: 4rem;
     line-height: 1.2em;
+    letter-spacing: 2px;
 /*
     letter-spacing: -1px;
     text-indent: -2px;
@@ -169,7 +170,7 @@ h5 {
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 a {
@@ -248,9 +249,13 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #efefef;
-    margin: 3.2em 0;
+    border-top: 1px solid #AFCDD3;
+    margin: 2em 0;
     padding: 0;
+}
+
+.subwork {
+  cursor: pointer;
 }
 
 blockquote {
@@ -595,17 +600,22 @@ a.button:focus {
    4. General - The main styles for the the theme
    ========================================================================== */
 
+.home-template {
+  display: none;
+
+}
+
 /* Big cover image on the home page */
 #site-head {
     position: relative;
-    display: table;
     width: 100%;
     height: 100%;
     margin-bottom: 0rem;
     text-align: center;
     color: #fff;
-    background: #AFCDD3 no-repeat center center;
+    background: #fff no-repeat center center;
     background-size: cover;
+    display:table;
 }
 
 #site-head:after {
