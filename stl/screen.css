@@ -61,7 +61,7 @@
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .i-ghost:before {
     content: "\e000";
@@ -182,12 +182,16 @@ a {
     -moz-transition: all ease 0.3s;
 }
 
+em {
+  padding-right: 3px;
+}
+
 a:hover {
     color: #D13C32;
 }
 
 a.btn {
-    
+
     text-decoration: none;
     background-color: #D13C32;
     border-radius: 6px;
@@ -364,8 +368,8 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 
@@ -514,7 +518,7 @@ a.btn#submitbutton {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
-    text-decoration:none; 
+    text-decoration:none;
     margin:0;
 
     padding-bottom: 11px;
@@ -728,8 +732,8 @@ a.fn-item.active {
     bottom: -40px;
     right: 6%;
     z-index: 1;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
     border-top: 50px solid #F8F7F1;
@@ -1109,9 +1113,9 @@ a.fn-item.active {
         padding-top: 20px;
     }
     #site-head {
-        -webkit-box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         min-height: 240px;
         padding: 15% 0;
         height: 100%;
@@ -1180,7 +1184,7 @@ a.fn-item.active {
         max-height: 80px;
     }
 
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
