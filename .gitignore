@@ -1,6 +1,7 @@
 local/
 malicious/
 etc/
+im/
 corpora/
 releases/
 *.tar.gz
