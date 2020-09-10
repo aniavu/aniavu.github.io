@@ -5,13 +5,13 @@ var unknown_token = '7b292b6a1f515410';
  */
 function addById (id, fu) {
   var e = document.getElementById(id);
-  e.addEventListener('click', fu, false);   
+  e.addEventListener('click', fu, false);
 }
 
-function isValid(email) { 
+function isValid(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-} 
+}
 
 function register () {
   var email_div = document.getElementById('beta_registration');
@@ -31,7 +31,7 @@ function register () {
 ///////////////// AJAX ///////////////////
 function subscribe (email) {
   return function() {
-    $.ajax({ 
+    $.ajax({
       url: 'http://api.gist.ly/email/subscribe/' + email +'FROMGOHAPPY.IO/',
       data: 'token=' + unknown_token, // Send value of the clicked button
       dataType: 'json',
@@ -59,15 +59,15 @@ function addById (id, fu) {
   if (!e) {
     return;
   }
-  e.addEventListener('click', fu, false);   
+  e.addEventListener('click', fu, false);
 }
 
 /**
  * Main JS file for GhostScroll behaviours
  */
-var $post = $('.post'), 
-	$first = $('.post.first'), 
-	$last = $('.post.last'), 
+var $post = $('.post'),
+	$first = $('.post.first'),
+	$last = $('.post.last'),
 	$fnav = $('.fixed-nav'),
 	$postholder = $('.post-holder'),
 	$postafter = $('.post-after'),
@@ -92,7 +92,7 @@ var $post = $('.post'),
         	if(e % 2 != 0)
         		$(this).css({
 						// these are the darker posts
-                    'background': '#242E35',
+                    'background': '#302b37',
                     'color'     : '#F8F7F1',
                 })
         })
@@ -106,7 +106,7 @@ var $post = $('.post'),
         	//	$(this).css('left', '6%')
 
         })
-        
+
 
         $('.btn.first').click( function () {
         	srcTo ($first)
@@ -143,7 +143,7 @@ var $post = $('.post'),
         })
 
         $('.post.last').next('.post-after').hide();
-        if($sitehead.length) { 
+        if($sitehead.length) {
             $(window).scroll( function () {
             	var w = $(window).scrollTop(),
             		g = $sitehead.offset().top,
@@ -193,7 +193,7 @@ var $post = $('.post'),
             fa[i].icon  = icons[i];
             fa[i].int   = postText.search(fa[i].str);
 
-            if(fa[i].int > -1 ) { 
+            if(fa[i].int > -1 ) {
                 fa[i].count = postText.match(new RegExp(fa[i].str,"g")).length;
                 for(var j=0; j < fa[i].count; j++) {
                     $(this).html($(this).html().replace(fa[i].str, "<i class='fa "+fa[i].icon+"'></i>"))
@@ -201,7 +201,7 @@ var $post = $('.post'),
             }
         }
     })
-    
+
     //$('.image').fancybox({
     //  helpers: {
     //    overlay: {
@@ -209,8 +209,7 @@ var $post = $('.post'),
     //    }
     //  }
     //});
-    
+
     $.fancybox.defaults.hideScrollbar = false;
 
 }(jQuery));
-

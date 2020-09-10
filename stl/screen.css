@@ -754,6 +754,12 @@ a.fn-item.active {
     margin:0;
 }
 
+.post-title:after {
+    content:' ';
+    display:block;
+    border: 0.01rem solid #AFCDD3;
+}
+
 .post-title a {
     text-decoration: none;
 }
@@ -859,6 +865,11 @@ a.fn-item.active {
     margin: 4rem 0 0 0;
     padding: 4rem 0 0 0;
     border-top: #EBF2F6 1px solid;
+}
+
+.time-title {
+   text-align:center;
+   font-size: 2.2rem;
 }
 
 .post-footer h4 {
