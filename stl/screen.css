@@ -95,7 +95,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Josefina Sans', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
     color: #3A4145;
@@ -134,7 +134,7 @@ h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 120%;
     margin-top: 0;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Josefina Sans', serif;
     margin-bottom: 0%;
 }
 
@@ -170,7 +170,7 @@ h5 {
 }
 
 h6 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 a {
@@ -648,7 +648,8 @@ a.button:focus {
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
     margin: 10px 0 10px 0;
-    font-size: 15rem;
+    font-size: 10rem;
+    font-family: "Josefina sans", serif;
 /*
     letter-spacing: -1px;
 */
@@ -659,11 +660,11 @@ a.button:focus {
     margin: 0;
     font-size: 4rem;
     line-height: 1.5em;
-    font-weight: 300;
+    font-weight: 200;
+    font-family: "Josefina sans", serif;
 /*
     font-family: 'Roboto Slab', serif;
 */
-    font-family: 'EB Garamond', serif;
     letter-spacing: 0;
     text-align: left;
 }
@@ -699,7 +700,7 @@ a.button:focus {
     top: 40px;
     left: 2%;
     z-index: 99999;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Josefina Sans', serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     line-height: 130%;
@@ -773,7 +774,7 @@ a.fn-item.active {
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Josefina Sans', serif;
     font-size: 1.5rem;
     color: #9EABB3;
 }
@@ -869,7 +870,7 @@ a.fn-item.active {
 
 .time-title {
    text-align:center;
-   font-size: 2.2rem;
+   font-size: 3.2rem;
 }
 
 .post-footer h4 {
@@ -938,7 +939,7 @@ a.fn-item.active {
     width: 80%;
     max-width: 800px;
     margin: 4rem auto;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Josefina sans', serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
